@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkseagreen;
+    color: #333;
+  }
+  /* CSS para navegação com os links um ao lado do outro */
+nav ul.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: px;
+    display: flex;
+    justify-content:center; /* Centraliza os itens */
+    background-color:darkseagreen;
+    color: #fff;
+}
+
+nav ul.nav-links li {
+    margin: 0 15px; /* Espaçamento entre os links */
+}
+
+nav ul.nav-links a {
+    text-decoration: none;
+    
+    font-size: 18px; /* Tamanho da fonte */
+    color: #fff;
+}
+
+nav ul.nav-links a:hover {
+    color: darkolivegreen; /* Cor do link ao passar o mouse */
+}
+
+
+
+  /* Estilo para o container dos posts */
+.posts-container {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: space-between; /* Distribui o espaço entre os posts */
+    margin: 20px; /* Margem ao redor do container */
+}
+
+/* Estilo individual dos posts */
+.post {
+    flex: 1 1 calc(33.333% - 20px); /* Tamanho dos posts no desktop (3 por linha) */
+    margin: 10px; /* Margem entre os posts */
+    background: #fff; /* Cor de fundo dos posts */
+    border: 1px solid darkseagreen; /* Borda dos posts */
+    padding: 15px; /* Padding interno dos posts */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra dos posts */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+
+/* Estilo para a imagem do post */
+.post img {
+    max-width: 100%; /* A imagem não deve ultrapassar a largura do post */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+    .post {
+        flex: 1 1 100%; /* Tamanho dos posts no celular (1 por linha) */
+    }
+}
+
+  
+  .post-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .post-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+  }
+
+  .post-content img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+
+
+  /* Footer */
+  footer {
+    background-color: darkseagreen;
+    color: white;
+    padding: 50px 0;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  .center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.center-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.center-button button:hover {
+    background-color: #45a049;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.section {
+  margin-bottom: 40px;
+}
+.section h2 {
+  color:darkseagreen;
+  border-bottom: 2px solid darkseagree;
+  padding-bottom: 5px;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.team-member {
+  flex: 1 1 45%;
+  text-align: center;
+}
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+</style>

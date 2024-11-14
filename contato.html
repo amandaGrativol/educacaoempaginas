@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Educação em Páginas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <br />
+      <h1>Educação em Páginas</h1>
+      <br />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p class="text-center">
+      Estamos aqui para ajudar! Se você tiver alguma dúvida, sugestão ou
+      feedback, não hesite em entrar em contato conosco.
+    </p>
+    <br />
+    <div class="container-lg">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="seuemail@example.com"
+        />
+      </div>
+      <br />
+      <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Nome</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput2"
+          placeholder="Nome Sobrenome"
+        />
+      </div>
+      <br />
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Digite sua mensagem</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+      <br />
+      <div class="mb-3">
+        <button
+          type="button"
+          class="btn btn-success"
+          onclick="window.location.href='mailto:martagrativol@gmail.com?subject=Contato&body=' + document.getElementById('exampleFormControlTextarea1').value"
+        >
+          Enviar Email
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p class="text-center">
+        &copy; 2024 Educação em Páginas. Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
